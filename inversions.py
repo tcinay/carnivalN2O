@@ -50,7 +50,7 @@ def preprocess_inputs(year, obs_folder, backtraj_folder):
     sensitivity = srr_raw * 1000 / grid_area[np.newaxis, :, :] # unit conversion 
 
     # Load Observations
-    dfObs = pd.read_excel(f"{obs_folder}/carnival_obs.xlsx", sheet_name=str(year))
+    dfObs = pd.read_excel(f"{obs_folder}/DataS1.xlsx", sheet_name=str(year))
     dfObs["datetime"] = pd.to_datetime(dfObs["datetime"])
     dfObs = dfObs[["datetime", "N2O_C"]].dropna(subset=["N2O_C"]).sort_values("datetime").reset_index(drop=True)
 

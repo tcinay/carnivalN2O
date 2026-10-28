@@ -8,7 +8,12 @@
 module load anaconda/2023b
 source activate carnival_env
 
+mkdir -p logs figures
+
 /home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig01.py
-#/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig02.py
-#/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig03.py
-#/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig04.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig02.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig03.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig04.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig05.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig06.py
+/home/gridsan/tcinay/.conda/envs/carnival_env/bin/python plot_fig07.py
